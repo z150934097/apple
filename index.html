@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/response.min.css">
     <link rel="stylesheet" href="css/index.min.css">
     <link rel="stylesheet" href="css/public.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <script src="js/jquery.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/index.js"></script>
@@ -49,23 +50,36 @@
         <li><img src="images/image_sou.png" alt="">搜索apple.com</li>
     </ul>
     <div class="page">
-        <div class="banner clf">
-            <ul class="img-box clf">
-                <li><a href="#"><div class="banner1"></div></a></li>
-                <li><a href="#"><div class="banner2"></div></a></li>
-                <li><a href="#"><div class="banner3"></div></a></li>
-                <li><a href="#"><div class="banner4"></div></a></li>
-            </ul>
-            <div class="tab">
-                <div class="hot"></div>
-                <div></div>
-                <div></div>
-                <div></div>
+        <!--<div class="banner clf">-->
+            <!--<ul class="img-box clf">-->
+                <!--<li><a href="#"><div class="banner1"></div></a></li>-->
+                <!--<li><a href="#"><div class="banner2"></div></a></li>-->
+                <!--<li><a href="#"><div class="banner3"></div></a></li>-->
+                <!--<li><a href="#"><div class="banner4"></div></a></li>-->
+            <!--</ul>-->
+            <!--<div class="tab">-->
+                <!--<div class="hot"></div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+                <!--<div></div>-->
+            <!--</div>-->
+            <!--<div class="jt">-->
+                <!--<div class="jt-left"><img src="images/zuojt.png" alt=""></div>-->
+                <!--<div class="jt-right"><img src="images/youjt.png" alt=""></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <div class="swiper-container banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><div class="banner-img" style="background: url(images/banner1.jpg)no-repeat center center;background-size: cover;"></div></div>
+                <div class="swiper-slide"><div class="banner-img" style="background: url(images/banner2.jpg)no-repeat center center;background-size: cover;"></div></div>
+                <div class="swiper-slide"><div class="banner-img" style="background: url(images/banner3.jpg)no-repeat center center;background-size: cover;"></div></div>
+                <div class="swiper-slide"><div class="banner-img" style="background: url(images/banner4.jpg)no-repeat center center;background-size: cover;"></div></div>
             </div>
-            <div class="jt">
-                <div class="jt-left"><img src="images/zuojt.png" alt=""></div>
-                <div class="jt-right"><img src="images/youjt.png" alt=""></div>
-            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next" style="background: url(images/youjt.png)no-repeat center center; background-size: cover"></div>
+            <div class="swiper-button-prev" style="background: url(images/zuojt.png)no-repeat center center; background-size: cover"></div>
         </div>
 
     </div>
@@ -82,7 +96,7 @@
         <div class="footer-top">
             <div class="box">
                 <h3 class="col-xs-12">
-                    选购及了解 <br>
+                    <a href="javascript:;">选购及了解</a> <br>
                 <span>
                    <a href="#"> Mac</a> <br>
                        <a href="#">iPad</a> <br>
@@ -97,7 +111,7 @@
             </div>
             <div class="box">
                 <h3 class="col-xs-12">
-                     Apple Store 商店 <br>
+                    <a href="javascript:;">Apple Store 商店</a> <br>
                 <span>
                     <a href="#">查找零售店</a> <br>
                         <a href="#">Genius Bar 天才吧</a><br>
@@ -114,14 +128,14 @@
             </div>
             <div class="box">
                 <h3 class="col-xs-12">
-                    教育应用 <br>
+                    <a href="javascript:;"> 教育应用</a> <br>
                 <span>
                    <a href="#"> Apple 与教育</a> <br>
                        <a href="#"> 高校师生选购</a>
                 </span>
                 </h3>
                 <h3 class="col-xs-12">
-                    商务应用 <br>
+                    <a href="javascript:;">商务应用</a> <br>
                 <span>
                     <a href="#">Apple 与商务</a> <br>
                         <a href="#">商务选购</a>
@@ -130,7 +144,7 @@
             </div>
             <div class="box">
                 <h3 class="col-xs-12">
-                    帐户<br>
+                    <a href="javascript:;">帐户</a><br>
                 <span>
                     <a href="#">管理你的 Apple ID</a> <br>
                         <a href="#">Apple Store 帐户</a> <br>
@@ -138,7 +152,7 @@
                 </span>
                 </h3>
                 <h3 class="col-xs-12">
-                    Apple 价值观<br>
+                    <a href="javascript:;"> Apple 价值观</a><br>
                 <span>
                     <a href="#">环境责任 </a><br>
                         <a href="#">供应商责任</a> <br>
@@ -149,7 +163,7 @@
             </div>
             <div class="box">
                 <h3 class="col-xs-12">
-                    关于 Apple <br>
+                    <a href="javascript:;"> 关于 Apple</a> <br>
                 <span>
                    <a href="#"> Apple 资讯</a> <br>
                        <a href="#">工作机会</a> <br>

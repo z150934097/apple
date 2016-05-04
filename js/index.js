@@ -5,12 +5,13 @@ $(function(){
             $('.header').css('opacity',1)
             $('.show').slideDown(600);
             $('.page').css('display', 'none');
-            $('.min-nav ul li:last a').css('margin-left',60)
+            $('.min-nav ul li:last a img').css('margin-right',-100)
             $flag=false;
         }else if (!$flag){
             $('.header').css('opacity',0.8)
             $('.show').slideUp(600);
             $('.page').css('display', 'block');
+            $('.min-nav ul li:last a img').css('margin-right',0)
             $flag=true;
         }
     })
@@ -98,13 +99,13 @@ $(function(){
     //    now=next=index1;
     //});
 
-    var swiper = new Swiper('.img-box', {
-        pagination: '.tab',
-        nextButton: '.jt-right',
-        prevButton: '.jt-left',
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
         slidesPerView: 1,
         paginationClickable: true,
-        spaceBetween: 30,
+        spaceBetween: 0,
         loop: true
     });
 
